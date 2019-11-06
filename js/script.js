@@ -14,7 +14,7 @@ function filter() {
   console.log(x.value)
 }
 
-const gallery = document.getElementsByTagName("a")[0].getAttribute("data-title"); 
+const gallery = document.querySelectorAll('a[data-title]');
 
 for (let i = 0; i <= gallery.length; i++) {
     console.log(gallery[i])
