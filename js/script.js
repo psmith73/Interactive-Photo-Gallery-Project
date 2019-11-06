@@ -19,3 +19,4 @@ const gallery = document.getElementsByTagName("a")[0].getAttribute("data-title")
 for (let i = 0; i <= gallery.length; i++) {
     console.log(gallery[i])
 }
+
