@@ -40,6 +40,17 @@ h1 {
 
 }
 
+.lb-image, .lb-dataContainer {
+    max-width: 100%;
+    height: auto !important;
+    width: 100%;
+}
+   
+   .lb-outerContainer {
+    max-width: 100%;
+    height: auto !important;
+}
+
 
 @media (max-width: 800px) {
     .gallery {
