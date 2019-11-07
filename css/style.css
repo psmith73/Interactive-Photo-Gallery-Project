@@ -40,6 +40,7 @@ h1 {
 
 }
 
+
 @media (max-width: 800px) {
     .gallery {
         width: 90%;
@@ -48,6 +49,24 @@ h1 {
     .gallery img {
         height: 500px;
         width: 500px;
+    }
+
+    .lb-data .lb-close {
+        position: fixed;
+        left: 10px;
+        top: 20px;
+    }
+
+    .lb-nav a.lb-next {
+        position: fixed;
+        right: 35px;
+        top: 0;
+    }
+
+    .lb-nav a.lb-prev {
+        position: fixed;
+        left: 35px;
+        top: 0;
     }
 }
 
