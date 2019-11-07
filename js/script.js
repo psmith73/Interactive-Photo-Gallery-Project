@@ -9,14 +9,34 @@ lightbox.option({
 document.getElementById("search").addEventListener("keyup", filter);
 
 function filter() {
-  var x = document.getElementById("search");
-  x.value = x.value.toLowerCase();
-  console.log(x.value)
+    var x = document.getElementById("search");
+    x.value = x.value.toLowerCase();
+    console.log(x.value);
+
+    const gallery = document.querySelectorAll('a[data-title]');
+    for (let i = 0; i < gallery.length; i++) {
+        let caption = gallery[i].getAttribute("data-title").toLowerCase();
+        console.log("caption");
+        if(caption.indexOf("x.value") > -1) { 
+            document.getElementById("photo").style.display; 
+        } else {
+            document.getElementById("photo").style.display = "none";
+        }
+    }
 }
 
-const gallery = document.querySelectorAll('a[data-title]');
-
-for (let i = 0; i <= gallery.length; i++) {
-    console.log(gallery[i])
-}
-
+// function filter() {
+//     var x = document.getElementById("search");
+//     x.value = x.value.toLowerCase();
+//     console.log(x.value);
+  
+//     const gallery = document.querySelectorAll('a[data-title]');
+//     for (let i = 0; i < gallery.length; i++) {
+//       let caption = gallery[i].getAttribute("data-title").toLowerCase();
+//       if(caption.indexOf(x.value) > -1) { 
+//         document.getElementById("photo").style.display = "none"; 
+//       } else {
+//         document.getElementById("photo").style.display;
+//       }
+//     }  
+// }
